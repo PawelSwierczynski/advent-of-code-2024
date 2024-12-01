@@ -2,7 +2,7 @@
 {
 	public interface IAdventTask
 	{
-		public string Name { get; set; }
+		public string Name { get; }
 
 		public string Execute(string input);
 	}
