@@ -14,9 +14,9 @@ namespace AdventOfCode
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AdcentOfCodeWindow : Window
     {
-        public MainWindow()
+        public AdcentOfCodeWindow()
         {
             InitializeComponent();
         }
