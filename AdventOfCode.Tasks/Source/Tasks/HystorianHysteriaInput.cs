@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace AdventOfCode.Tasks.Tasks
+namespace AdventOfCode.Tasks
 {
 	public class HystorianHysteriaInput
 	{

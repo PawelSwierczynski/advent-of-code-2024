@@ -1,4 +1,4 @@
-﻿namespace AdventOfCode.Tasks.Tasks
+﻿namespace AdventOfCode.Tasks
 {
 	public class HystorianHysteriaInputParser : IInputParseable<HystorianHysteriaInput>
 	{
