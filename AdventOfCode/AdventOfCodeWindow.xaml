@@ -32,11 +32,19 @@
 		<ComboBox Name="SelectTaskComboBox" Grid.Column="1" Grid.Row="4" Margin="10, 0" SelectionChanged="SelectTaskComboBox_SelectionChanged" />
 
 		<Label Grid.Column="2" Grid.Row="3" Margin="5, 0" Content="Input" />
-		<TextBox Name="InputTextBox" Grid.RowSpan="2" Grid.Column="2" Grid.Row="4" Margin="10, 0" />
+		<TextBox Name="InputTextBox" Grid.RowSpan="2" Grid.Column="2" Grid.Row="4" Margin="10, 0" IsEnabled="False" />
 
-		<Button Name="ProcessInputButton" Grid.Column="2" Grid.Row="6" Content="Process input" Margin="10, 10, 0, 5" HorizontalAlignment="Left" Width="90" Click="ProcessInputButton_Click" />
+		<Button Name="ProcessInputButton"
+				Grid.Column="2"
+				Grid.Row="6"
+				Content="Process input"
+				Margin="10, 10, 0, 5"
+				HorizontalAlignment="Left"
+				Width="90"
+				IsEnabled="False"
+				Click="ProcessInputButton_Click" />
 
 		<Label Grid.Column="2" Grid.Row="7" Margin="5, 0" Content="Output" />
-		<TextBox Name="OutputTextBox" Grid.Column="2" Grid.Row="8" Margin="10, 0" IsEnabled="False" />
+		<TextBox Name="OutputTextBox" Grid.Column="2" Grid.Row="8" Margin="10, 0" />
 	</Grid>
 </Window>
