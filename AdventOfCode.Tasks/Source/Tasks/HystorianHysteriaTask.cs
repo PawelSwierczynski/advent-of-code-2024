@@ -1,10 +1,12 @@
-﻿namespace AdventOfCode.Tasks.Source.Tasks
+﻿namespace AdventOfCode.Tasks.Tasks
 {
-	public class HystorianHysteriaTask : IAdventTask
+	public class HystorianHysteriaTask : AdventTask<HystorianHysteriaInput>
 	{
-		public string Name => "Day 01. Hystorian Hysteria";
+		public override string Name => throw new System.NotImplementedException();
 
-		public string Execute(string input)
+		protected override HystorianHysteriaInputParser InputParser => throw new System.NotImplementedException();
+
+		protected override string ProcessInput(HystorianHysteriaInput parsedInput)
 		{
 			throw new System.NotImplementedException();
 		}

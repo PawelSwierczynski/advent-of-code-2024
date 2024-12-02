@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 
 namespace AdventOfCode
 {
@@ -10,6 +11,11 @@ namespace AdventOfCode
 		public AdcentOfCodeWindow()
 		{
 			InitializeComponent();
+		}
+
+		private void ProcessInputButton_Click(object sender, RoutedEventArgs e)
+		{
+			throw new NotImplementedException();
 		}
 	}
 }

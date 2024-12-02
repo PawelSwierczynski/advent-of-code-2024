@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace AdventOfCode.Tasks.Tests.Source.Tasks
+namespace AdventOfCode.Tasks.Tests.Tasks
 {
 	public class HystorianHysteriaTaskTest
 	{

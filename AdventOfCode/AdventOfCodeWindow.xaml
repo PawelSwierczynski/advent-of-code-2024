@@ -7,6 +7,36 @@
 		mc:Ignorable="d"
 		Title="Advent of Code 2024" Height="450" Width="800">
 	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="10" />
+			<ColumnDefinition Width="3*" />
+			<ColumnDefinition Width="7*" />
+			<ColumnDefinition Width="10" />
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="10" />
+			<RowDefinition Height="auto" />
+			<RowDefinition Height="10" />
+			<RowDefinition Height="auto" />
+			<RowDefinition Height="auto" />
+			<RowDefinition />
+			<RowDefinition Height="auto" />
+			<RowDefinition Height="auto" />
+			<RowDefinition Height="auto" />
+			<RowDefinition Height="20" />
+		</Grid.RowDefinitions>
+		
+		<Label Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" Content="Merry Christmas!" FontSize="40" />
 
+		<Label Grid.Column="1" Grid.Row="3" Margin="5, 0" Content="Select a task" />
+		<ComboBox Name="SelectTaskComboBox" Grid.Column="1" Grid.Row="4" Margin="10, 0" />
+
+		<Label Grid.Column="2" Grid.Row="3" Margin="5, 0" Content="Input" />
+		<TextBox Name="InputTextBox" Grid.RowSpan="2" Grid.Column="2" Grid.Row="4" Margin="10, 0" />
+
+		<Button Name="ProcessInputButton" Grid.Column="2" Grid.Row="6" Content="Process input" Margin="10, 10, 0, 5" HorizontalAlignment="Left" Width="90" Click="ProcessInputButton_Click" />
+
+		<Label Grid.Column="2" Grid.Row="7" Margin="5, 0" Content="Output" />
+		<TextBox Name="OutputTextBox" Grid.Column="2" Grid.Row="8" Margin="10, 0" IsEnabled="False" />
 	</Grid>
 </Window>
