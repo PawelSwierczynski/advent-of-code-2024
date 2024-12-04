@@ -10,7 +10,7 @@ namespace AdventOfCode.Tasks
 		{
 			AdventTasks = new List<AdventTask>
 			{
-				new HystorianHysteriaTask(),
+				new HistorianHysteriaTask(),
 				new MullItOverTask(),
 			};
 		}

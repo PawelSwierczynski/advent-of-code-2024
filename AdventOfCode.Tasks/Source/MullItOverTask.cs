@@ -13,8 +13,7 @@ namespace AdventOfCode.Tasks
 
 		public override string Name => "Day 3: Mull It Over";
 
-		//TODO: zrobić, żeby działało dla 2 outputów
-		public string ProcessInput_1(string input)
+		public override string ExecuteInitialTask(string input)
 		{
 			var matchedMultiplications = multiplySyntax.Matches(input);
 
@@ -24,11 +23,11 @@ namespace AdventOfCode.Tasks
 				.ToString();
 		}
 
-		public override string ExecuteFirstTask(string input)
+		public override string ExecuteAdvancedTask(string input)
 		{
 			input = disableSyntax.Replace(input, string.Empty);
 
-			return ProcessInput_1(input);
+			return ExecuteInitialTask(input);
 		}
 	}
 }

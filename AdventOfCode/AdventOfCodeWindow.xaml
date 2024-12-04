@@ -9,8 +9,9 @@
 	<Grid>
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition Width="10" />
-			<ColumnDefinition Width="3*" />
-			<ColumnDefinition Width="7*" />
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="*" />
 			<ColumnDefinition Width="10" />
 		</Grid.ColumnDefinitions>
 		<Grid.RowDefinitions>
@@ -32,7 +33,7 @@
 		<ComboBox Name="SelectTaskComboBox" Grid.Column="1" Grid.Row="4" Margin="10, 0" SelectionChanged="SelectTaskComboBox_SelectionChanged" />
 
 		<Label Grid.Column="2" Grid.Row="3" Margin="5, 0" Content="Input" />
-		<TextBox Name="InputTextBox" Grid.RowSpan="2" Grid.Column="2" Grid.Row="4" Margin="10, 0" IsEnabled="False" AcceptsReturn="True" />
+		<TextBox Name="InputTextBox" Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Column="2" Grid.Row="4" Margin="10, 0" IsEnabled="False" AcceptsReturn="True" />
 
 		<Button Name="ProcessInputButton"
 				Grid.Column="2"
@@ -44,7 +45,10 @@
 				IsEnabled="False"
 				Click="ProcessInputButton_Click" />
 
-		<Label Grid.Column="2" Grid.Row="7" Margin="5, 0" Content="Output" />
-		<TextBox Name="OutputTextBox" Grid.Column="2" Grid.Row="8" Margin="10, 0" />
+		<Label Grid.Column="2" Grid.Row="7" Margin="5, 0" Content="Output of a first part" />
+		<TextBox Name="InitialTaskOutputTextBox" Grid.Column="2" Grid.Row="8" Margin="10, 0" />
+
+		<Label Grid.Column="3" Grid.Row="7" Margin="5, 0" Content="Output of a second part" />
+		<TextBox Name="AdvancedTaskOutputTextBox" Grid.Column="3" Grid.Row="8" Margin="10, 0" />
 	</Grid>
 </Window>

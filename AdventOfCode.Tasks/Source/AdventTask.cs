@@ -4,7 +4,7 @@
 	{
 		public abstract string Name { get; }
 
-		public abstract string ExecuteFirstTask(string input);
-		public abstract string ExecuteSecondTask(string input);
+		public abstract string ExecuteInitialTask(string input);
+		public abstract string ExecuteAdvancedTask(string input);
 	}
 }
