@@ -1,7 +1,7 @@
 ﻿using FluentAssertions;
 using NUnit.Framework;
 
-namespace AdventOfCode.Tasks.Tests.Source
+namespace AdventOfCode.Tasks.Tests
 {
 	public class MullItOverTaskTest
 	{

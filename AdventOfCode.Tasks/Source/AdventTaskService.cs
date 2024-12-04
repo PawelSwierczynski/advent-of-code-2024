@@ -12,6 +12,7 @@ namespace AdventOfCode.Tasks
 			{
 				new HistorianHysteriaTask(),
 				new MullItOverTask(),
+				new CeresSearchTask()
 			};
 		}
 	}
