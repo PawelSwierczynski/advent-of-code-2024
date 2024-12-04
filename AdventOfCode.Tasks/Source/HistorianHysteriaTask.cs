@@ -47,7 +47,7 @@ public class HistorianHysteriaTask : AdventTask
 		return result.ToString();
 	}
 
-	private (IEnumerable<int>, IEnumerable<int>) ParseLocationIds(string input)
+	private (IEnumerable<int> FirstLocationIds, IEnumerable<int> SecondLocationIds) ParseLocationIds(string input)
 	{
 		IEnumerable<LocationIds> parsedInput;
 
