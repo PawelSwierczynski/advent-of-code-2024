@@ -11,6 +11,7 @@ namespace AdventOfCode.Tasks
 			AdventTasks = new List<AdventTask>
 			{
 				new HistorianHysteriaTask(),
+				new RedNosedReportsTask(),
 				new MullItOverTask(),
 				new CeresSearchTask()
 			};
