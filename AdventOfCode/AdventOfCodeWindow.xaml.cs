@@ -28,7 +28,7 @@ namespace AdventOfCode
 		{
 			if (SelectTaskComboBox.SelectedItem is AdventTask adventTask)
 			{
-				OutputTextBox.Text = adventTask.ProcessInput(InputTextBox.Text);
+				OutputTextBox.Text = adventTask.ExecuteFirstTask(InputTextBox.Text);
 			}
 		}
 	}

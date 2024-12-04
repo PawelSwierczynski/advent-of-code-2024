@@ -13,16 +13,18 @@ public class HystorianHysteriaTask : AdventTask
 {
 	public override string Name => "Day 1: Historian Hysteria";
 
-	public override string ProcessInput(string input)
+	public override string ExecuteFirstTask(string input)
 	{
 		IEnumerable<Locations> parsedInput;
 
 		var csvConfiguration = new CsvConfiguration(CultureInfo.InvariantCulture) { Delimiter = "   ", HasHeaderRecord = false };
 
-		using var stringReader = new StringReader(input);
-		using var csvReader = new CsvReader(stringReader, csvConfiguration);
+		using (var stringReader = new StringReader(input))
 		{
-			parsedInput = csvReader.GetRecords<Locations>().ToList();
+			using var csvReader = new CsvReader(stringReader, csvConfiguration);
+			{
+				parsedInput = csvReader.GetRecords<Locations>().ToList();
+			}
 		}
 
 		var firstLocationIds = parsedInput.Select(p => p.First)
